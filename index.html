@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="af6dcb2b-ee8c-4338-9504-7384d2fd264a"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes | A Minimalistic Quotes App - Inspiration, Prism</title>
+    
+    <meta name="description" content="A minimalistic, free, and ad-free quotes app. Get daily inspiration in a minimal interface. Modern design. Built for focus.">
+    
+    <meta property="og:title" content="Quotes | A Minimalistic Quotes App">
+    <meta property="og:description" content="Focus without distraction. A minimal quotes app with ad-free inspiration.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/shalenMathew/Quotes-app">
+    <meta property="og:image" content="./assets/hero-screenshot.png"> 
+    <link rel="icon" type="image/png" href="./assets/icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        prism: {
+                            red: '#EF4444', orange: '#F97316', yellow: '#FBBF24',
+                            green: '#22C55E', blue: '#3B82F6', violet: '#8B5CF6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: black; }
+        section { scroll-margin-top: 100px; }
+
+        .prism-blur-bg {
+            position: absolute;
+            inset: -100px -20px;
+            z-index: 0;
+            filter: blur(100px) saturate(2.5) opacity(0.85);
+            background: 
+                radial-gradient(at 10% 10%, #EF4444 0px, transparent 50%),
+                radial-gradient(at 25% 25%, #F97316 0px, transparent 50%),
+                radial-gradient(at 40% 40%, #FBBF24 0px, transparent 50%),
+                radial-gradient(at 60% 60%, #22C55E 0px, transparent 50%),
+                radial-gradient(at 80% 80%, #3B82F6 0px, transparent 50%),
+                radial-gradient(at 95% 95%, #8B5CF6 0px, transparent 50%);
+        }
+
+        .prism-text-gradient {
+            background: linear-gradient(135deg, #EF4444 0%, #F97316 15%, #FBBF24 35%, #22C55E 55%, #3B82F6 80%, #8B5CF6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @-moz-document url-prefix() {
+            .prism-text-gradient {
+                background: linear-gradient(135deg, #EF4444 0%, #F97316 15%, #FBBF24 35%, #22C55E 55%, #3B82F6 80%, #8B5CF6 100%);
+                color: transparent;
+                background-clip: text;
+            }
+        }
+    </style>
+</head>
+
+<body class="text-gray-100 font-sans antialiased">
+
+    <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between max-w-7xl">
+            <div class="flex items-center gap-3">
+                <img src="./assets/Quotes logo.png" alt="Quotes Logo" class="h-9 w-9 rounded-xl">
+                <span class="text-lg font-bold tracking-tighter text-white">Quotes.app</span>
+            </div>
+
+            <div class="flex items-center gap-8">
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-400">
+                    <a href="#features" class="hover:text-white transition-colors">Features</a>
+                    <a href="#socials" class="hover:text-white transition-colors">Socials</a>
+                    <a href="https://github.com/shalenMathew/Quotes-app" target="_blank" class="hover:text-white transition-colors">Source Code</a>
+                </div>
+
+                <a href="#download" class="bg-white text-black px-5 py-2 rounded-full font-bold text-sm hover:bg-gray-200 transition-all active:scale-95">
+                    Get App
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 max-w-7xl">
+        <section class="py-24 md:py-36 text-center">
+            <h1 class="font-sans text-5xl md:text-7xl font-extrabold text-white leading-tight tracking-tighter">
+                Being Positive. <span class="block">Everyday.</span>
+                <span class="block mt-2 prism-text-gradient">Quotes.</span>
+                <span class="text-gray-500">Refined.</span>
+            </h1>
+
+            <p class="mt-8 text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+               A minimalistic quotes app with Tinder-like swipeable cards, delivering inspiration & positive energy in your life.
+            </p>
+
+            <div class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://f-droid.org/en/packages/com.shalenmathew.quotesapp" target="_blank" class="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-2xl font-extrabold text-base hover:bg-gray-200 transition-all active:scale-95 flex items-center justify-center gap-2">
+                    Download from F-Droid
+                </a>
+                <a href="https://apt.izzysoft.de/fdroid/index/apk/com.shalenmathew.quotesapp" target="_blank" class="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-2xl font-extrabold text-base hover:bg-gray-200 transition-all active:scale-95 flex items-center justify-center gap-2">
+                    Download from IzzyDroid
+                </a>
+            </div>
+
+            <div class="relative mt-16 flex justify-center max-w-4xl mx-auto px-4">
+                <div class="absolute inset-0 z-0">
+                    <div class="prism-blur-bg"></div>
+                </div>
+
+                <div class="relative z-10 mx-auto bg-gray-900 p-1.5 rounded-[2.4rem] shadow-[0_0_80px_rgba(34,197,94,0.15)] border-[3px] border-gray-800 flex items-center justify-center overflow-hidden h-[500px] md:h-[600px]" 
+                     style="aspect-ratio: 9/19.5;">
+                    
+                    <div class="w-full h-full overflow-hidden rounded-[2rem] bg-black relative">
+                        <video 
+                            class="w-full h-full object-cover" 
+                            autoplay 
+                            muted 
+                            loop 
+                            playsinline>
+                            <source src="./assets/app_demo.mp4" type="video/mp4">
+                            <img src="./assets/hero-screenshot.png" alt="Quotes App Demo">
+                        </video>
+                    </div>
+
+                    <div class="absolute top-3 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 rounded-full border border-white/10 z-20"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-28 border-t border-white/5">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-16">Features you would love 😍</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 max-w-6xl mx-auto">
+                <div class="text-center flex flex-col items-center">
+                    <div class="p-3 bg-prism-red/10 rounded-xl text-prism-red mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white leading-tight">Fresh Motivational Quotes Daily</h3>
+                    <p class="mt-3 text-gray-500 leading-relaxed text-sm">Start every morning with a handpicked dose of wisdom to fuel your mindset.</p>
+                </div>
+
+                <div class="text-center flex flex-col items-center">
+                    <div class="p-3 bg-prism-orange/10 rounded-xl text-prism-orange mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white leading-tight">Save Favorites Offline</h3>
+                    <p class="mt-3 text-gray-500 leading-relaxed text-sm">Your personal library of inspiration is always with you, even without an internet connection.</p>
+                </div>
+
+                <div class="text-center flex flex-col items-center">
+                    <div class="p-3 bg-prism-yellow/10 rounded-xl text-prism-yellow mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white leading-tight">Share with Friends & Family</h3>
+                    <p class="mt-3 text-gray-500 leading-relaxed text-sm">Spread the positivity. Instantly share beautiful quote cards on any social platform.</p>
+                </div>
+
+                <div class="text-center flex flex-col items-center">
+                    <div class="p-3 bg-prism-green/10 rounded-xl text-prism-green mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white leading-tight">Home Screen Widget</h3>
+                    <p class="mt-3 text-gray-500 leading-relaxed text-sm">Auto-refreshes every 24 hours to keep your home screen fresh and motivating.</p>
+                </div>
+
+                <div class="text-center flex flex-col items-center">
+                    <div class="p-3 bg-prism-blue/10 rounded-xl text-prism-blue mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white leading-tight">Create Custom Quotes</h3>
+                    <p class="mt-3 text-gray-500 leading-relaxed text-sm">Write down your own thoughts and affirmations to keep them within sight.</p>
+                </div>
+
+                <div class="text-center flex flex-col items-center">
+                    <div class="p-3 bg-prism-violet/10 rounded-xl text-prism-violet mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white leading-tight">Daily Inspiration via Notifications</h3>
+                    <p class="mt-3 text-gray-500 leading-relaxed text-sm">Get a gentle nudge of positivity delivered directly to your lock screen.</p>
+                </div>
+            </div>
+        </section>
+
+<section id="socials" class="py-24 border-t border-white/5">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-16">Connect with Me 🤝</h2>
+            <div class="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto px-4">
+                
+                <a href="https://shalenmathewportfolio.my.canva.site/" target="_blank" class="flex items-center gap-3 bg-gray-900/40 border border-white/5 px-6 py-3.5 rounded-2xl hover:border-prism-red hover:-translate-y-1 transition-all duration-300 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-prism-red group-hover:drop-shadow-[0_0_8px_#EF4444]"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    <span class="text-sm font-semibold text-gray-300 group-hover:text-white">Portfolio</span>
+                </a>
+
+                <a href="https://x.com/shalenMathew" target="_blank" class="flex items-center gap-3 bg-gray-900/40 border border-white/5 px-6 py-3.5 rounded-2xl hover:border-prism-orange hover:-translate-y-1 transition-all duration-300 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-prism-orange group-hover:drop-shadow-[0_0_8px_#F97316]"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    <span class="text-sm font-semibold text-gray-300 group-hover:text-white">Twitter</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/shalen-mathew-3b566921b/" target="_blank" class="flex items-center gap-3 bg-gray-900/40 border border-white/5 px-6 py-3.5 rounded-2xl hover:border-prism-blue hover:-translate-y-1 transition-all duration-300 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-prism-blue group-hover:drop-shadow-[0_0_8px_#3B82F6]"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    <span class="text-sm font-semibold text-gray-300 group-hover:text-white">LinkedIn</span>
+                </a>
+
+                <a href="https://discord.gg/2UgRTdFED9" target="_blank" class="flex items-center gap-3 bg-gray-900/40 border border-white/5 px-6 py-3.5 rounded-2xl hover:border-prism-violet hover:-translate-y-1 transition-all duration-300 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-prism-violet group-hover:drop-shadow-[0_0_8px_#8B5CF6]"><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/><path d="M9.9 4.2h4.2l.5 1.1a11.1 11.1 0 0 1 4 4.5V17a3 3 0 0 1-3 3h-7.2a3 3 0 0 1-3-3v-7.2a11.1 11.1 0 0 1 4-4.5l.5-1.1Z"/></svg>
+                    <span class="text-sm font-semibold text-gray-300 group-hover:text-white">Discord</span>
+                </a>
+
+                <a href="https://bsky.app/profile/shalenmathew.bsky.social" target="_blank" class="flex items-center gap-3 bg-gray-900/40 border border-white/5 px-6 py-3.5 rounded-2xl hover:border-prism-green hover:-translate-y-1 transition-all duration-300 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-prism-green group-hover:drop-shadow-[0_0_8px_#22C55E]"><path d="M17.5 19c.7 0 1.3-.2 1.8-.7s.7-1.1.7-1.8c0-1.1-.9-2-2-2-.1 0-.1 0-.2.1l-.3.1c-.2-3.1-2.8-5.7-5.9-5.7-2.6 0-4.8 1.8-5.6 4.1-.4-.1-.8-.1-1.3-.1-1.9 0-3.5 1.6-3.5 3.5 0 2 1.6 3.5 3.5 3.5h12.7Z"/></svg>
+                    <span class="text-sm font-semibold text-gray-300 group-hover:text-white">Bluesky</span>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="download" class="py-24 mt-20 text-center rounded-3xl" style="background: radial-gradient(at 10% 10%, rgba(239, 68, 68, 0.1) 0px, transparent 100%), radial-gradient(at 90% 90%, rgba(139, 92, 246, 0.1) 0px, transparent 100%);">
+            <h2 class="text-4xl font-extrabold text-white mb-4">Get Quotes Now!</h2>
+            <p class="mb-10 text-xl text-gray-400 max-w-xl mx-auto leading-relaxed">Focus without distraction. Mindful inspiration in a minimalist package.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://f-droid.org/en/packages/com.shalenmathew.quotesapp/" target="_blank" class="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-2xl font-extrabold text-base hover:bg-gray-200 transition-all active:scale-95">
+                    Download from F-Droid
+                </a>
+                <a href="https://apt.izzysoft.de/fdroid/index/apk/com.shalenmathew.quotesapp" target="_blank"  class="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-2xl font-extrabold text-base hover:bg-gray-200 transition-all active:scale-95">
+                    Download from IzzyDroid
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-20 bg-black text-gray-500 py-16 px-6 border-t border-white/5">
+        <div class="container mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="flex items-center gap-3">
+                <img src="./assets/Quotes logo.png" alt="Quotes Logo" class="h-8 w-8 rounded-lg">
+                <span class="text-lg font-bold text-white tracking-tighter">Quotes.app</span>
+            </div>
+            <div class="flex gap-10 text-sm">
+                <a href="#" class="hover:text-white transition">Privacy</a>
+                <a href="#" class="hover:text-white transition">Contact</a>
+                <a href="https://github.com/shalenMathew/Quotes-app" target="_blank" class="hover:text-white transition">Source Code</a>
+            </div>
+            <p class="text-xs text-gray-600">&copy; 2026 Built by Shalen Mathew. Licensed under Apache 2.0</p>
+        </div>
+    </footer>
+
+</body>
+</html>
